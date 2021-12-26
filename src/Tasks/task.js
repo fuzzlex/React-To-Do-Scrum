@@ -10,7 +10,7 @@ function Task({ task}) {
     const changeState2 = () =>{
         setClasses2("new2")
       }
-    const dates = new Date;
+    const dates = new Date();
     const Timer = (time) =>{
     return (time < 10 ) ? `0${time}` : time     
     }
