@@ -1,3 +1,11 @@
+.all{
+    background:linear-gradient(rgba(221, 84, 84, 0.3), rgba(60,60,60,0.4), rgba(99,99,99,0.5)) ;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+
+}
+
 .btn{
     width: 5rem;
     height: 2rem;
