@@ -1,38 +1,59 @@
-.App {
-  text-align: center;
+.btn{
+    width: 5rem;
+    height: 2rem;
+    margin-left: 17%;
+    color: red;
+    background-color: aliceblue;
+    border:1px solid brown;
+    cursor: pointer;
+}
+.task{
+    width: 30vw;
+    background-color: rgb(255, 11, 11);
+    color: rgb(252, 252, 252);
+    margin: 2rem 4rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 2rem;
+    position: relative;
+    left: 0;
+}
+.task h1{
+    word-wrap: break-word;
+    width: 22vw;
+    text-align: center;
+}
+.task h4{
+    cursor: pointer;
+    background-color: wheat;
+    color: black;
+    border-radius: 2rem;
+    padding: 0.3rem;
+}
+.task h4:hover{
+    background-color: rgb(245, 151, 37);
+}
+.mainTarget{
+    width: 40vw;
+    display: flex;
+    justify-content:center ;
+}
+.new1{
+    left: 35%;
+    transition: left 0.9s;
+    background-color: rgb(0, 47, 255);
+}
+.time{
+    margin-top: -1.7rem;
+}
+.new2{
+    left: 65%;
+    transition: left 0.9s;
+    background-color: rgb(12, 211, 72);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+input{
+    height: 3em;
+    width: 15em;    
 }

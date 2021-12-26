@@ -1,0 +1,26 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.head{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+.title{
+    list-style-type: none;
+    font-weight: 900;
+}
+.scrumBoard{
+    width: 13rem;
+    height: 3rem;
+    background-color: red;
+    border-radius: 2rem 2rem 0 0;
+    color: aliceblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

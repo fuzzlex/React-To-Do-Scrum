@@ -1,0 +1,24 @@
+import React from 'react'
+import Task from './task'
+
+function Tasks({tasks}) {
+    return (
+        <div>
+        {tasks.map((task) =>(
+            <Task
+        task={task}
+        key={task.id}
+
+        />
+      
+
+        )
+
+        )}
+     
+            
+        </div>
+    )
+}
+
+export default Tasks
