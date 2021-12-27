@@ -65,3 +65,8 @@ input{
     height: 3em;
     width: 15em;    
 }
+.delete{
+    margin-top: -1.7rem;
+    cursor: pointer;
+    font-weight: 900;
+}

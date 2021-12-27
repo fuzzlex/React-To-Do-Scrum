@@ -1,7 +1,7 @@
 import React from 'react'
 import { useState } from 'react'
 
-function Task({ task}) {
+function Task({ task, deleteTask}) {
     const[classes1, setClasses] = useState("")
     const[classes2, setClasses2] = useState("")
     const changeState = () =>{
@@ -14,6 +14,7 @@ function Task({ task}) {
     const Timer = (time) =>{
     return (time < 10 ) ? `0${time}` : time     
     }
+
 
     return (
         <div>
@@ -28,6 +29,10 @@ function Task({ task}) {
 
 
         </div>
+        <div
+        className = {`task ${classes1} ${classes2} delete`}
+        onClick={() => deleteTask(task.id)}
+        >Delete</div>
         </div>
     )
 }

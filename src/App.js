@@ -1,7 +1,7 @@
 import './App.css';
 import Header from './header/head';
 import Form from './Form/form';
-import { useState } from 'react/cjs/react.development';
+import { useState } from 'react';
 import Tasks from './Tasks/tasks';
 
 function App() {
@@ -12,6 +12,11 @@ function App() {
     setTasks([...tasks, allText])
   
   }
+  const deleteTask = (deletedId) =>{
+    setTasks(tasks.filter((task) =>
+        task.id !== deletedId
+    ))
+}
 
   return (
     <div className='all'>
@@ -23,6 +28,7 @@ function App() {
 
     <Tasks
       tasks = {tasks}
+      deleteTask = {deleteTask}
     
     />
 
